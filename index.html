@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Tip Calculator</title>
+    <style>
+        h2 {
+            font-size: 12px;
+        }
+    </style>
+    <style>
+        body {
+      background-color: rgb(138, 204, 226);
+    }
+    </style>
+</head>
+<body>
+    <div id="calculator">
+        <h2>ITMD 4/541 - Lab 3 - Prudhvi Muppasani</h2>
+        <h1>Tip Calculator</h1>
+        <form id="tipForm">
+            <label for="billAmount">Bill Total:</label>
+            <input type="number" id="billAmount" step="0.01" required>
+            <br>
+
+            <label for="tipPercentage">Tip Percentage:</label>
+            <input type="range" id="tipPercentage" min="0" max="100">
+            <span id="tipPercentageValue">0%</span>
+            <br>
+
+            <label for="tipAmount">Tip Amount:</label>
+            <input type="text" id="tipAmount" disabled>
+            <br>
+
+            <label for="totalAmount">Total Bill with Tip:</label>
+            <input type="text" id="totalAmount" disabled>
+            <br>
+
+            <label for="tipPercentageInput">Custom Tip Percentage:</label>
+            <input type="number" id="tipPercentageInput" step="0.01">
+            <br>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

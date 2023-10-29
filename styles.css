@@ -1,0 +1,122 @@
+/*Styles by default for smaller displays*/
+    body {
+        font-family: Arial, sans-serif;
+        text-align: center;
+        background-color: #f0f0f0;
+    }
+
+    #calculator {
+        margin: 20px auto;
+        padding: 20px;
+        border: 1px solid #ccc;
+        max-width: 300px;
+        background-color: #caf01f;
+        box-shadow: 0 0 10px rgba(0.1, 0, 0, 0.1);
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    label {
+        margin-top: 5px;
+        color: #333;
+    }
+
+    input[type="number"], input[type="range"], input[type="text"] {
+        width: 95%;
+        padding: 6px;
+        margin: 6px 10 ;
+    }
+
+    input[type="range"] {
+        margin-top: 5px;
+    }
+
+    #tipAmount, #totalAmount {
+        background-color: #d29f1fcc;
+        color: #0f0707;
+    }
+
+    #tipForm {
+        margin-top: 23px;
+    }
+
+    #tipPercentageValue {
+        font-weight: bold;
+        color: #333;
+    }
+
+    /* It's the designing button  */
+    input[type="submit"] {
+        background-color: #0073e6;
+        color: #fff;
+        padding: 25px;
+        border: none;
+        cursor: pointer;
+    }
+
+    /* Design the "customized tip percentage" */
+    #tipPercentageInput {
+        border: 5px solid #ccc;
+        background-color: #d29f1fcc;
+        padding: 5px;
+        margin: 5px 0;
+    }
+
+    /* styles for smaller screens */
+    @media screen and (max-width: 768px) {
+        #calculator {
+            max-width: 100%;
+            margin: 0;
+            padding: 10px;
+        }
+        
+        form {
+            margin-top: 10px;
+        }
+        
+        label {
+            margin-top: 5px;
+        }
+        
+        input[type="number"], input[type="range"], input[type="text"] {
+            padding: 5px;
+            width: 100%;
+            margin: 5px 0;
+        }
+        
+        input[type="range"] {
+            margin-top: 5px;
+        }
+        
+        #tipAmount, #totalAmount {
+            background-color: #d29f1fcc;
+            color: #0f0707;
+        }
+        
+        #tipForm {
+            margin-top: 10px;
+        }
+        
+        #tipPercentageValue {
+            font-weight: bold;
+            color: #333;
+        }
+        
+        input[type="submit"] {
+            background-color: #0073e6;
+            color: #fff;
+            border: none;
+            padding: 10px;
+            cursor: pointer;
+        }
+        
+        #tipPercentageInput {
+            border: 1px solid #ccc;
+            background-color: #d29f1fcc;
+            padding: 5px;
+            margin: 5px 0;
+        }
+    }
